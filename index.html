@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#140a07" />
+  <title>Chocolate Cafe Springfield, IL</title>
+  <style>
+    :root {
+      --bg:#120907;
+      --card:#1d100c;
+      --gold:#d3a856;
+      --gold2:#f0cd7a;
+      --text:#fff8ec;
+      --muted:#d8c4a0;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      min-height:100vh;
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(211,168,86,.16), transparent 28%),
+        radial-gradient(circle at 80% 90%, rgba(211,168,86,.10), transparent 30%),
+        linear-gradient(180deg,#1b0d09 0%, #090504 100%);
+      display:flex;
+      justify-content:center;
+      padding:22px;
+    }
+    .wrap {
+      width:min(560px,100%);
+      margin:auto;
+      border:1px solid rgba(211,168,86,.55);
+      border-radius:28px;
+      background:linear-gradient(180deg,rgba(34,17,12,.96),rgba(13,8,6,.98));
+      box-shadow:0 28px 80px rgba(0,0,0,.55);
+      overflow:hidden;
+      position:relative;
+    }
+    .wrap:before {
+      content:"";
+      position:absolute; inset:10px;
+      border:1px solid rgba(211,168,86,.22);
+      border-radius:22px;
+      pointer-events:none;
+    }
+    header {
+      text-align:center;
+      padding:34px 26px 18px;
+      position:relative;
+      z-index:1;
+    }
+    .cup {
+      font-size:56px;
+      filter:sepia(1) saturate(1.2);
+      margin-bottom:2px;
+    }
+    h1 {
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      font-size:clamp(38px,8vw,58px);
+      color:var(--gold2);
+      letter-spacing:.3px;
+    }
+    .city {
+      margin-top:4px;
+      color:#fff;
+      font-family:Georgia, serif;
+      font-style:italic;
+      font-size:24px;
+    }
+    .tagline {
+      margin-top:16px;
+      color:var(--muted);
+      letter-spacing:3px;
+      font-size:13px;
+      text-transform:uppercase;
+    }
+    main {
+      padding:8px 24px 30px;
+      position:relative;
+      z-index:1;
+    }
+    .address {
+      text-align:center;
+      border:1px solid rgba(211,168,86,.42);
+      border-radius:18px;
+      padding:18px;
+      margin:8px 0 16px;
+      background:rgba(255,255,255,.025);
+      line-height:1.55;
+    }
+    .address strong {
+      display:block;
+      color:var(--gold2);
+      font-size:16px;
+      margin-bottom:5px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    .btn {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      width:100%;
+      padding:17px 18px;
+      margin:12px 0;
+      border-radius:15px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:800;
+      font-size:18px;
+      transition:.2s ease;
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow:0 10px 24px rgba(0,0,0,.2);
+    }
+    .btn:hover { transform:translateY(-2px); filter:brightness(1.07); }
+    .maps { background:linear-gradient(135deg,#d7ad5c,#a87724); color:#1a0d08; }
+    .instagram { background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
+    .tiktok { background:#080808; }
+    .facebook { background:#1877f2; }
+    .icon { font-size:23px; }
+    footer {
+      text-align:center;
+      color:var(--muted);
+      padding:4px 24px 28px;
+      font-size:13px;
+      letter-spacing:.6px;
+    }
+    .small-line {
+      width:90px;height:2px;margin:12px auto 18px;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+    }
+  </style>
+</head>
+<body>
+  <section class="wrap">
+    <header>
+      <div class="cup">☕</div>
+      <h1>Chocolate Cafe</h1>
+      <div class="city">Springfield, IL</div>
+      <div class="small-line"></div>
+      <div class="tagline">Coffee • Crepes • Dessert</div>
+    </header>
+
+    <main>
+      <div class="address">
+        <strong>Visit Us</strong>
+        4151 Wabash Ave<br />
+        Springfield, IL 62711
+      </div>
+
+      <a class="btn maps" href="https://www.google.com/maps/search/?api=1&query=4151%20Wabash%20Ave%2C%20Springfield%2C%20IL%2062711" target="_blank" rel="noopener">
+        <span class="icon">📍</span> Get Directions
+      </a>
+      <a class="btn instagram" href="https://www.instagram.com/chocolatecafe_springfieldil" target="_blank" rel="noopener">
+        <span class="icon">📸</span> Instagram
+      </a>
+      <a class="btn tiktok" href="https://www.tiktok.com/@chocolate.cafe39" target="_blank" rel="noopener">
+        <span class="icon">🎵</span> TikTok
+      </a>
+      <a class="btn facebook" href="https://www.facebook.com/share/1KYqQyWBa5/" target="_blank" rel="noopener">
+        <span class="icon">f</span> Facebook
+      </a>
+    </main>
+
+    <footer>
+      Thank you for supporting local ♥
+    </footer>
+  </section>
+</body>
+</html>
