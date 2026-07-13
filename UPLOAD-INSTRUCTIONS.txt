@@ -1,0 +1,13 @@
+UPLOAD INSTRUCTIONS
+
+1. Open your GitHub repository: Chocolate-Cafe
+2. Delete or replace the old index.html file.
+3. Upload BOTH files:
+   - index.html
+   - chocolate-cafe-logo.jpeg
+4. Commit the changes.
+5. Wait 1–3 minutes for GitHub Pages to update.
+6. Refresh:
+   https://chocolatecafespringfield.github.io/Chocolate-Cafe/
+
+Important: both files must stay in the repository root, not inside a folder.
